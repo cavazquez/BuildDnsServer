@@ -5,6 +5,9 @@ on:
     tags:
       - "v*"     # Ajusta el patrón según tu esquema de tags
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build ${{ matrix.rid }}
